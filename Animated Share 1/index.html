@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated Share Button</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- embedded fontawesome icons-->
+        <script = src="https://kit.fontawesome.com/e25b852c87.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="share-container">
+            <ul class="share-link">
+                <li>
+                    <i class="fas fa-camera"></i> Photo
+                </li>
+                <li>
+                    <i class="fas fa-folder"></i> Files
+                </li>
+                <li>
+                    <i class="fas fa-microphone"></i> Radio
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i> New Email
+                </li>
+            </ul>
+            <div class="social-link">
+                <div class="send">Send</div>
+                <div class="close">Close</div>
+                <!-- <i class="far fa-paper-plane" class="send"></i>
+                <i class="fas fa-times" class="close"></i> -->
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    const socialLink = document.querySelector('.social-link');
+    const shareLink = document.querySelector('.share-link');
+
+    socialLink.addEventListener('click', function(){
+        socialLink.classList.toggle('active');
+        socialLink.classList.toggle('active');
+    });
+</script>
+
